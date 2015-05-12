@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<SHOP>
+	
+	<ITEM id="headGear1">
+		<REF>headGear</REF>
+		<NAME>Melon Protector Head</NAME>
+		<DESCRIPTION>Caution: Seeds may get in your eyes. Adds ability to survive hitting 1 obstacle or enemy.</DESCRIPTION>
+		<PRICE>0</PRICE>
+		<AVAILABLE>yes</AVAILABLE>
+		<LEVELABLE>yes</LEVELABLE>
+		<TYPE>powerup</TYPE>
+		<DEFAULT_ITEM>true</DEFAULT_ITEM>
+		<LEVEL>1</LEVEL>
+	</ITEM>
+	
+	<ITEM id="headGear2">
+		<REF>headGear</REF>
+		<NAME>Voodoo Protector Head</NAME>
+		<DESCRIPTION>May cause player to prick phone with pins if upset by our game. Survive hitting 2 obstacles or enemies.</DESCRIPTION>
+		<PRICE>1500</PRICE>
+		<AVAILABLE>yes</AVAILABLE>
+		<LEVELABLE>yes</LEVELABLE>
+		<TYPE>powerup</TYPE>
+		<DEFAULT_ITEM>false</DEFAULT_ITEM>
+		<LEVEL>2</LEVEL>
+	</ITEM>	
+	
+	<ITEM id="headGear3">
+		<REF>headGear</REF>
+		<NAME>Horse Head Pro</NAME>
+		<DESCRIPTION>The latest in memefication technology, gives you instant cool status. Survive hitting 3 obstacles or enemies.</DESCRIPTION>
+		<PRICE>4000</PRICE>
+		<AVAILABLE>yes</AVAILABLE>
+		<LEVELABLE>yes</LEVELABLE>
+		<TYPE>powerup</TYPE>
+		<DEFAULT_ITEM>false</DEFAULT_ITEM>
+		<LEVEL>3</LEVEL>
+	</ITEM>		
+	
+	
+	<ITEM id="headGear4">
+		<REF>headGear</REF>
+		<NAME>Cone Pro Head</NAME>
+		<DESCRIPTION>Like a bad dog you’ll look funny in this.</DESCRIPTION>
+		<PRICE>12000</PRICE>
+		<AVAILABLE>yes</AVAILABLE>
+		<LEVELABLE>yes</LEVELABLE>
+		<TYPE>powerup</TYPE>
+		<DEFAULT_ITEM>false</DEFAULT_ITEM>
+		<LEVEL>4</LEVEL>
+	</ITEM>		
+	
+	
+	<ITEM id="headGear5">
+		<REF>headGear</REF>
+		<NAME>#1 Foam Finger</NAME>
+		<DESCRIPTION>Those who rule the stadiums rule the field of play. Survive hitting 5 obstacles or enemies.</DESCRIPTION>
+		<PRICE>30000</PRICE>
+		<AVAILABLE>yes</AVAILABLE>
+		<LEVELABLE>yes</LEVELABLE>
+		<TYPE>powerup</TYPE>
+		<DEFAULT_ITEM>false</DEFAULT_ITEM>
+		<LEVEL>5</LEVEL>
+	</ITEM>		
+	
+	<!-- ############################################################### -->	
+	
+	
+	<ITEM id="coinDouble1">
+		<REF>coinDouble</REF>
+		<NAME>Piggy Bank Mode</NAME>
+		<DESCRIPTION>Unlike other get rich quick schemes, it’s not a scam. 2x extra coins collected.</DESCRIPTION>
+		<PRICE>0</PRICE>
+		<AVAILABLE>yes</AVAILABLE>
+		<LEVELABLE>yes</LEVELABLE>
+		<TYPE>powerup</TYPE>
+		<DEFAULT_ITEM>true</DEFAULT_ITEM>
+		<LEVEL>1</LEVEL>
+	</ITEM>
+	
+	<ITEM id="coinDouble2">
+		<REF>coinDouble</REF>
+		<NAME>Carbon Fibre Piggy Mode</NAME>
+		<DESCRIPTION>Like a black sheep, but it’s a pig. Makes you stand out. 3x extra coins collected. </DESCRIPTION>
+		<PRICE>4000</PRICE>
+		<AVAILABLE>yes</AVAILABLE>
+		<LEVELABLE>yes</LEVELABLE>
+		<TYPE>powerup</TYPE>
+		<DEFAULT_ITEM>false</DEFAULT_ITEM>
+		<LEVEL>2</LEVEL>
+	</ITEM>
+	
+	<ITEM id="coinDouble3">
+		<REF>coinDouble</REF>
+		<NAME>Gold Piggy Mode</NAME>
+		<DESCRIPTION>Feed it a carrot, or 9 carats. Either way, it’ll fatten up your wallet. 4x extra coins collected.</DESCRIPTION>
+		<PRICE>12000</PRICE>
+		<AVAILABLE>yes</AVAILABLE>
+		<LEVELABLE>yes</LEVELABLE>
+		<TYPE>powerup</TYPE>
+		<DEFAULT_ITEM>false</DEFAULT_ITEM>
+		<LEVEL>3</LEVEL>
+	</ITEM>
+	
+	<ITEM id="coinDouble4">
+		<REF>coinDouble</REF>
+		<NAME>Diamond Piggy Mode</NAME>
+		<DESCRIPTION>Bling, bling, everytime I come up in yo city, with 5x extra coins? Rap can be positive.</DESCRIPTION>
+		<PRICE>30000</PRICE>
+		<AVAILABLE>yes</AVAILABLE>
+		<LEVELABLE>yes</LEVELABLE>
+		<TYPE>powerup</TYPE>
+		<DEFAULT_ITEM>false</DEFAULT_ITEM>
+		<LEVEL>4</LEVEL>
+	</ITEM>
+	
+
+	
+	<!-- ############################################################### -->
+	
+	<ITEM id="vacuum1">
+		<REF>coinMagnet</REF>
+		<NAME>Vac Pac</NAME>
+		<DESCRIPTION>If ya going to suck, be good at it. Vacuum body & nozzle arms suck up extra coins.</DESCRIPTION>
+		<PRICE>0</PRICE>
+		<AVAILABLE>yes</AVAILABLE>
+		<LEVELABLE>yes</LEVELABLE>
+		<TYPE>powerup</TYPE>
+		<DEFAULT_ITEM>true</DEFAULT_ITEM>
+		<LEVEL>1</LEVEL>
+	</ITEM>
+	
+	<ITEM id="vacuum2">
+		<REF>coinMagnet</REF>
+		<NAME>Blacc Vac Pac</NAME>
+		<DESCRIPTION>Carbon Fibre adds suckiness so you’ll never “need a dollar, dollar, dollar is what I need!” Plus get 2x extra time.</DESCRIPTION>
+		<PRICE>4000</PRICE>
+		<AVAILABLE>yes</AVAILABLE>
+		<LEVELABLE>yes</LEVELABLE>
+		<TYPE>powerup</TYPE>
+		<DEFAULT_ITEM>false</DEFAULT_ITEM>
+		<LEVEL>2</LEVEL>
+	</ITEM>
+	
+	<ITEM id="vacuum3">
+		<REF>coinMagnet</REF>
+		<NAME>Gold Vac Pac</NAME>
+		<DESCRIPTION>Your phone becomes a vacuum that picks up real gold dust. Not. You only get extra coins. Plus 3x extra time.</DESCRIPTION>
+		<PRICE>12000</PRICE>
+		<AVAILABLE>yes</AVAILABLE>
+		<LEVELABLE>yes</LEVELABLE>
+		<TYPE>powerup</TYPE>
+		<DEFAULT_ITEM>false</DEFAULT_ITEM>
+		<LEVEL>3</LEVEL>
+	</ITEM>
+	
+	<ITEM id="vacuum4">
+		<REF>coinMagnet</REF>
+		<NAME>Diamond Vac Pac</NAME>
+		<DESCRIPTION>Stolen from an evil oil baron, so don’t feel guilty. Adds extra coin suckage plus get 4x extra time.</DESCRIPTION>
+		<PRICE>30000</PRICE>
+		<AVAILABLE>yes</AVAILABLE>
+		<LEVELABLE>yes</LEVELABLE>
+		<TYPE>powerup</TYPE>
+		<DEFAULT_ITEM>false</DEFAULT_ITEM>
+		<LEVEL>4</LEVEL>
+	</ITEM>
+	
+
+	
+	<!-- ############################################################### -->
+	
+	<ITEM id="slow1">
+		<REF>slowDown</REF>
+		<NAME>Sloth Slow Mode</NAME>
+		<DESCRIPTION>For those with a predisposition for delayed laughs and slow reaction times. Hellllooo McFly???</DESCRIPTION>
+		<PRICE>0</PRICE>
+		<AVAILABLE>yes</AVAILABLE>
+		<LEVELABLE>yes</LEVELABLE>
+		<TYPE>powerup</TYPE>
+		<DEFAULT_ITEM>true</DEFAULT_ITEM>
+		<LEVEL>1</LEVEL>
+	</ITEM>
+	
+	<ITEM id="slow2">
+		<REF>slowDown</REF>
+		<NAME>Carbon Fibre Sloth</NAME>
+		<DESCRIPTION>Slows everything down like an R. Kelly love song, only much less creepy. Plus 2x slo mo.</DESCRIPTION>
+		<PRICE>4000</PRICE>
+		<AVAILABLE>yes</AVAILABLE>
+		<LEVELABLE>yes</LEVELABLE>
+		<TYPE>powerup</TYPE>
+		<DEFAULT_ITEM>false</DEFAULT_ITEM>
+		<LEVEL>2</LEVEL>
+	</ITEM>
+	
+	<ITEM id="slow3">
+		<REF>slowDown</REF>
+		<NAME>Gold Sloth</NAME>
+		<DESCRIPTION>Enough time to answer your Mum’s calls, rather than pretending you didn’t hear. Also get 3x extra slo mo.</DESCRIPTION>
+		<PRICE>12000</PRICE>
+		<AVAILABLE>yes</AVAILABLE>
+		<LEVELABLE>yes</LEVELABLE>
+		<TYPE>powerup</TYPE>
+		<DEFAULT_ITEM>false</DEFAULT_ITEM>
+		<LEVEL>3</LEVEL>
+	</ITEM>
+	
+	<ITEM id="slow4">
+		<REF>slowDown</REF>
+		<NAME>Diamond Sloth</NAME>
+		<DESCRIPTION>Get all the time in the world. Think David Bain a few years back. Plus adds 4x extra slo mo.</DESCRIPTION>
+		<PRICE>30000</PRICE>
+		<AVAILABLE>yes</AVAILABLE>
+		<LEVELABLE>yes</LEVELABLE>
+		<TYPE>powerup</TYPE>
+		<DEFAULT_ITEM>false</DEFAULT_ITEM>
+		<LEVEL>4</LEVEL>
+	</ITEM>
+	
+	
+	<!-- ############################################################### -->
+	
+	<ITEM id="boost1">
+		<REF>boost</REF>
+		<NAME>Flitter Permitter</NAME>
+		<DESCRIPTION>Blink and you’ll miss it. Gives you a pin drop time of 1 second.</DESCRIPTION>
+		<PRICE>0</PRICE>
+		<AVAILABLE>yes</AVAILABLE>
+		<LEVELABLE>yes</LEVELABLE>
+		<TYPE>pinDrop</TYPE>
+		<DEFAULT_ITEM>true</DEFAULT_ITEM>
+		<LEVEL>1</LEVEL>
+	</ITEM>
+	
+	<ITEM id="boost2">
+		<REF>boost</REF>
+		<NAME>Flash in the Pan</NAME>
+		<DESCRIPTION>Fall faster than Rebecca Black’s stardom. Increase your pin drop time by 2 seconds.</DESCRIPTION>
+		<PRICE>1500</PRICE>
+		<AVAILABLE>yes</AVAILABLE>
+		<LEVELABLE>yes</LEVELABLE>
+		<TYPE>pinDrop</TYPE>
+		<DEFAULT_ITEM>false</DEFAULT_ITEM>
+		<LEVEL>2</LEVEL>
+	</ITEM>
+	
+	<ITEM id="boost3">
+		<REF>boost</REF>
+		<NAME>Lead Balloon</NAME>
+		<DESCRIPTION>For swifter exits, like when you tell an absolute howler. Increase your pin drop time by 3 seconds.</DESCRIPTION>
+		<PRICE>4000</PRICE>
+		<AVAILABLE>yes</AVAILABLE>
+		<LEVELABLE>yes</LEVELABLE>
+		<TYPE>pinDrop</TYPE>
+		<DEFAULT_ITEM>false</DEFAULT_ITEM>
+		<LEVEL>3</LEVEL>
+	</ITEM>
+	
+	<ITEM id="boost4">
+		<REF>boost</REF>
+		<NAME>Hail the hail</NAME>
+		<DESCRIPTION>When you rain down on enemies, they call their insurance brokers. Increase your pin drop time by 4 seconds.</DESCRIPTION>
+		<PRICE>12000</PRICE>
+		<AVAILABLE>yes</AVAILABLE>
+		<LEVELABLE>yes</LEVELABLE>
+		<TYPE>pinDrop</TYPE>
+		<DEFAULT_ITEM>false</DEFAULT_ITEM>
+		<LEVEL>4</LEVEL>
+	</ITEM>
+		
+	<ITEM id="boost5">
+		<REF>boost</REF>
+		<NAME>Peregrine Swoop</NAME>
+		<DESCRIPTION>The fastest animal in the world. Turns prey into hunter with one tap. Increases pin drop time by 5 seconds.</DESCRIPTION>
+		<PRICE>30000</PRICE>
+		<AVAILABLE>yes</AVAILABLE>
+		<LEVELABLE>yes</LEVELABLE>
+		<TYPE>pinDrop</TYPE>
+		<DEFAULT_ITEM>false</DEFAULT_ITEM>
+		<LEVEL>5</LEVEL>
+	</ITEM>
+	
+
+	<ITEM id="boostMove1">
+		<REF>boostMove</REF>
+		<NAME>Diaper Drop</NAME>
+		<DESCRIPTION>You turn like a sumo. Just let yourself fall for goodness sake. </DESCRIPTION>
+		<PRICE>0</PRICE>
+		<AVAILABLE>yes</AVAILABLE>
+		<LEVELABLE>yes</LEVELABLE>
+		<TYPE>pinDrop</TYPE>
+		<DEFAULT_ITEM>true</DEFAULT_ITEM>
+		<LEVEL>1</LEVEL>
+	</ITEM>
+	
+	<ITEM id="boostMove2">
+		<REF>boostMove</REF>
+		<NAME>‘L’ plater</NAME>
+		<DESCRIPTION>Stolen off a boyracer, this upgrade’s inherited its previous owner’s steering skills. Not many, if any.</DESCRIPTION>
+		<PRICE>1500</PRICE>
+		<AVAILABLE>yes</AVAILABLE>
+		<LEVELABLE>yes</LEVELABLE>
+		<TYPE>pinDrop</TYPE>
+		<DEFAULT_ITEM>false</DEFAULT_ITEM>
+		<LEVEL>2</LEVEL>
+	</ITEM>
+	
+	<ITEM id="boostMove3">
+		<REF>boostMove</REF>
+		<NAME>Tiger Moth</NAME>
+		<DESCRIPTION>Actually, forget the tiger. You're basically a passenger on a moth heading nowhere, with limited steering skills.</DESCRIPTION>
+		<PRICE>4000</PRICE>
+		<AVAILABLE>yes</AVAILABLE>
+		<LEVELABLE>yes</LEVELABLE>
+		<TYPE>pinDrop</TYPE>
+		<DEFAULT_ITEM>false</DEFAULT_ITEM>
+		<LEVEL>3</LEVEL>
+	</ITEM>
+	
+	<ITEM id="boostMove4">
+		<REF>boostMove</REF>
+		<NAME>The Cullen</NAME>
+		<DESCRIPTION>A sidestep that gets you out of almost any jam. Become a legendary playmaker.</DESCRIPTION>
+		<PRICE>12000</PRICE>
+		<AVAILABLE>yes</AVAILABLE>
+		<LEVELABLE>yes</LEVELABLE>
+		<TYPE>pinDrop</TYPE>
+		<DEFAULT_ITEM>false</DEFAULT_ITEM>
+		<LEVEL>4</LEVEL>
+	</ITEM>
+	
+	
+	<ITEM id="boostMove5">
+		<REF>boostMove</REF>
+		<NAME>King Pin</NAME>
+		<DESCRIPTION>Like a mafia don, you’ll escape all the stickiest jams. Consider this a get out of jail card.</DESCRIPTION>
+		<PRICE>30000</PRICE>
+		<AVAILABLE>yes</AVAILABLE>
+		<LEVELABLE>yes</LEVELABLE>
+		<TYPE>pinDrop</TYPE>
+		<DEFAULT_ITEM>false</DEFAULT_ITEM>
+		<LEVEL>5</LEVEL>
+	</ITEM>
+	
+
+	
+	<!-- ############################################################### -->
+
+	<ITEM id="default">
+		<REF>default</REF>
+		<NAME>The Carl</NAME>
+		<DESCRIPTION>He’s your average Joe only he’s Carl, and he’s heaps way above average.  He da man, like He-man.</DESCRIPTION>
+		<PRICE>0</PRICE>
+		<AVAILABLE>yes</AVAILABLE>
+		<LEVELABLE>no</LEVELABLE>
+		<TYPE>fashion</TYPE>
+		<DEFAULT_ITEM>true</DEFAULT_ITEM>
+		<LEVEL></LEVEL>
+	</ITEM>	
+	
+	
+	<ITEM id="coolDude">
+		<REF>coolDude</REF>
+		<NAME>The Fonz</NAME>
+		<DESCRIPTION>Click ya fingers & the opposite sex will flock. Boss jukeboxes & be the coolest cat on the planet. Almost</DESCRIPTION>
+		<PRICE>500</PRICE>
+		<AVAILABLE>yes</AVAILABLE>
+		<LEVELABLE>no</LEVELABLE>
+		<TYPE>fashion</TYPE>
+		<DEFAULT_ITEM>false</DEFAULT_ITEM>
+		<LEVEL></LEVEL>
+	</ITEM>	
+	
+	<ITEM id="pirate">
+		<REF>pirate</REF>
+		<NAME>The Rrrrrrrr</NAME>
+		<DESCRIPTION>How to become a hipster? Dress like a pirate. Same beard, tattoos, clothes and a cool pet.</DESCRIPTION>
+		<PRICE>1000</PRICE>
+		<AVAILABLE>yes</AVAILABLE>
+		<LEVELABLE>no</LEVELABLE>
+		<TYPE>fashion</TYPE>
+		<DEFAULT_ITEM>false</DEFAULT_ITEM>
+		<LEVEL></LEVEL>
+	</ITEM>	
+	
+	<ITEM id="astronaut">
+		<REF>astronaut</REF>
+		<NAME>The Neil</NAME>
+		<DESCRIPTION>Call Houston and tell them you have a problem. We take no responsibility for the crank call though.</DESCRIPTION>
+		<PRICE>5000</PRICE>
+		<AVAILABLE>yes</AVAILABLE>
+		<LEVELABLE>no</LEVELABLE>
+		<TYPE>fashion</TYPE>
+		<DEFAULT_ITEM>false</DEFAULT_ITEM>
+		<LEVEL></LEVEL>
+	</ITEM>	
+	
+	<ITEM id="lifeSaver">
+		<REF>lifeSaver</REF>
+		<NAME>The Piha Swag</NAME>
+		<DESCRIPTION>An essential outfit for anyone wanting to stand out in a sea of board shorts.</DESCRIPTION>
+		<PRICE>15000</PRICE>
+		<AVAILABLE>yes</AVAILABLE>
+		<LEVELABLE>no</LEVELABLE>
+		<TYPE>fashion</TYPE>
+		<DEFAULT_ITEM>false</DEFAULT_ITEM>
+		<LEVEL></LEVEL>
+	</ITEM>	
+	
+
+</SHOP>

@@ -1,0 +1,319 @@
+[
+	{
+		"ID":"1",
+		"NAME":"Drop Baby",
+		"DESCRIPTION":"1,000m passed. What were you expecting, a medal?",
+		"ACTION":"fall",
+		"TYPE":"",
+		"QUANTITY":1000,
+		"AWARD":0
+		
+	},
+	{
+		"ID":"2",
+		"NAME":"Drop Newbie",
+		"DESCRIPTION":"2,500m passed. You're almost worthy of this game.",
+		"ACTION":"fall",
+		"TYPE":"",
+		"QUANTITY":2500,
+		"AWARD":0
+	},
+	{
+		"ID":"3",
+		"NAME":"Dropomatic",
+		"DESCRIPTION":"5,000m passed. You're not such a tin-ass after all.",
+		"ACTION":"fall",
+		"TYPE":"",
+		"QUANTITY":5000,
+		"AWARD":2000
+	},	
+	{
+		"ID":"4",
+		"NAME":"Drop King",
+		"DESCRIPTION":"10,000m passed. Ewww, look at me I'm the king of the castle.",
+		"ACTION":"fall",
+		"TYPE":"",
+		"QUANTITY":10000,
+		"AWARD":0
+	},	
+	{
+		"ID":"5",
+		"NAME":"Drop Kick",
+		"DESCRIPTION":"50,000m passed. Get a life. We hate people clocking our game.",
+		"ACTION":"fall",
+		"TYPE":"",
+		"QUANTITY":50000,
+		"AWARD":10000
+	},	
+	{
+		"ID":"6",
+		"NAME":"Chump Change",
+		"DESCRIPTION":"100 coins collected in a single game. Don't spend it all at once",
+		"ACTION":"coin",
+		"TYPE":"",
+		"QUANTITY":100,
+		"AWARD":0
+	},	
+	{
+		"ID":"7",
+		"NAME":"Make it Rain",
+		"DESCRIPTION":"500 coins collected in a single game. Almost enough coins to swim in, like that other duck.",
+		"ACTION":"coin",
+		"TYPE":"",
+		"QUANTITY":500,
+		"AWARD":0
+	},	
+	{
+		"ID":"8",
+		"NAME":"Johnny Flash Pants",
+		"DESCRIPTION":"1,000 coins collected in single game. Look at me, look at me.",
+		"ACTION":"coin",
+		"TYPE":"",
+		"QUANTITY":1000,
+		"AWARD":0
+	},	
+	{
+		"ID":"9",
+		"NAME":"Cashed Up Bogan",
+		"DESCRIPTION":"2,500 coins collected in single game. \nGet ready for a little tall poppy treatment.",
+		"ACTION":"coin",
+		"TYPE":"",
+		"QUANTITY":2500,
+		"AWARD":0
+	},	
+	{
+		"ID":"10",
+		"NAME":"The Wolf of Fall St.",
+		"DESCRIPTION":"10,000 coins collected in single game. \nWe want to make a movie about your fall. Lols.",
+		"ACTION":"coin",
+		"TYPE":"",
+		"QUANTITY":10000,
+		"AWARD":0
+	},	
+	{
+		"ID":"11",
+		"NAME":"Hat trick",
+		"DESCRIPTION":"Logged in 3 days in a row. The best way to spend your long weekend.",
+		"ACTION":"login",
+		"TYPE":"",
+		"QUANTITY":3,
+		"AWARD":2000
+	},	
+	{
+		"ID":"12",
+		"NAME":"Maverick",
+		"DESCRIPTION":"Logged in 4 days in a row. You need to de-tech pronto, before your relationships suffer.",
+		"ACTION":"login",
+		"TYPE":"",
+		"QUANTITY":4,
+		"AWARD":4000
+	},
+  	{
+		"ID":"13",
+		"NAME":"Addict",
+		"DESCRIPTION":"Logged in 5 days in a row. Quick, somebody call Gamer’s Anonymous.",
+		"ACTION":"login",
+		"TYPE":"",
+		"QUANTITY":5,
+		"AWARD":10000
+	},
+    {
+		"ID":"14",
+		"NAME":"The Holy Snail",
+		"DESCRIPTION":"Activate 5 Slo-mo power-ups. What are you waiting for? A medal?",
+		"ACTION":"powerup",
+		"TYPE":"slowDown",
+		"QUANTITY":5,
+		"AWARD":0
+	},    
+	{
+		"ID":"15",
+		"NAME":"Blackhole Award",
+		"DESCRIPTION":"Activate 10 Vac Pac power-ups. You suck majorly.",
+		"ACTION":"powerup",
+		"TYPE":"coinMagnet",
+		"QUANTITY":10,
+		"AWARD":0
+	},	
+	{
+		"ID":"16",
+		"NAME":"Lord of the Counterfeiters",
+		"DESCRIPTION":"Activate 25 Coin Multiplier power-ups. You’re a walking license to print money.",
+		"ACTION":"powerup",
+		"TYPE":"coinDouble",
+		"QUANTITY":25,
+		"AWARD":0
+	},	
+	{
+		"ID":"17",
+		"NAME":"So fresh and so clean, clean",
+		"DESCRIPTION":"Purchase 1 fashion item. About time you changed that outfit, phew!",
+		"ACTION":"fashion",
+		"TYPE":"",
+		"QUANTITY":1,
+		"AWARD":0
+	},	
+	{
+		"ID":"18",
+		"NAME":"Fashion Victim",
+		"DESCRIPTION":"Purchase 3 fashion items. It’s skydiving, not a catwalk.",
+		"ACTION":"fashion",
+		"TYPE":"",
+		"QUANTITY":3,
+		"AWARD":2000
+	},	
+	{
+		"ID":"19",
+		"NAME":"Wardrobe Junkie",
+		"DESCRIPTION":"Purchase 4 fashion items. Congratulations, you’re like the Imelda Marcos of dropping.",
+		"ACTION":"fashion",
+		"TYPE":"",
+		"QUANTITY":4,
+		"AWARD":0
+	},	
+	{
+		"ID":"20",
+		"NAME":"The Luck Award",
+		"DESCRIPTION":"1 prize claimed. You da man! (Or lady). (Or ladyman).",
+		"ACTION":"prize",
+		"TYPE":"",
+		"QUANTITY":1,
+		"AWARD":2000
+	},	
+	{
+		"ID":"21",
+		"NAME":"Flukey-fluke pants",
+		"DESCRIPTION":"3 prizes claimed.  You can make a new friend or two with that bounty.",
+		"ACTION":"prize",
+		"TYPE":"",
+		"QUANTITY":3,
+		"AWARD":4000
+	},	
+	{
+		"ID":"22",
+		"NAME":"Mr Winning",
+		"DESCRIPTION":"5 prizes claimed.",
+		"ACTION":"prize",
+		"TYPE":"",
+		"QUANTITY":5,
+		"AWARD":10000
+	},	
+	{
+		"ID":"23",
+		"NAME":"Hoovers and the Shakers",
+		"DESCRIPTION":"1st Coin Vacuum upgraded in shop. Basically, you suck.",
+		"ACTION":"upgrade",
+		"TYPE":"coinMagnet",
+		"QUANTITY":2,
+		"AWARD":0
+	},	
+	{
+		"ID":"24",
+		"NAME":"Granny Diver",
+		"DESCRIPTION":"2nd Slo-mo Sloth upgraded in shop. So slow, you’re almost in reverse.",
+		"ACTION":"upgrade",
+		"TYPE":"slowDown",
+		"QUANTITY":3,
+		"AWARD":0
+	},	
+	{
+		"ID":"25",
+		"NAME":"Greed Meister",
+		"DESCRIPTION":"3rd Coin Multiplier upgraded in shop. More coins than if Arcade Fire were busking.",
+		"ACTION":"upgrade",
+		"TYPE":"coinDouble",
+		"QUANTITY":4,
+		"AWARD":0
+	},	
+	{
+		"ID":"26",
+		"NAME":"Wright Bros",
+		"DESCRIPTION":"Pass threshold & submit 1 score. You’re making history, just by crashing to earth. Too easy.",
+		"ACTION":"threshold",
+		"TYPE":"",
+		"QUANTITY":1,
+		"AWARD":0
+	},	
+	{
+		"ID":"27",
+		"NAME":"Tiger Moth",
+		"DESCRIPTION":"Pass threshold & submit 10 scores. More moth, than tiger but hey, it’s all flying.",
+		"ACTION":"threshold",
+		"TYPE":"",
+		"QUANTITY":10,
+		"AWARD":0
+	},	
+	{
+		"ID":"28",
+		"NAME":"Don Juan",
+		"DESCRIPTION":"Pass threshold & submit 100 scores. You really are very good at scoring. ",
+		"ACTION":"threshold",
+		"TYPE":"",
+		"QUANTITY":100,
+		"AWARD":2000
+	},	
+	{
+		"ID":"29",
+		"NAME":"Goose & Maverick",
+		"DESCRIPTION":"Pass threshold & submit 500 scores. Like Top Gun, only not as cool.",
+		"ACTION":"threshold",
+		"TYPE":"",
+		"QUANTITY":500,
+		"AWARD":4000
+	},	
+	{
+		"ID":"30",
+		"NAME":"Drop God",
+		"DESCRIPTION":"Pass threshold & submit 1000 scores. We got nothing. All hail you.",
+		"ACTION":"threshold",
+		"TYPE":"",
+		"QUANTITY":1000,
+		"AWARD":10000
+	},
+	{
+		"ID":"31",
+		"NAME":"Tell a Mate",
+		"DESCRIPTION":"Share the game once. Preferably a BFF, who knows you like games.",
+		"ACTION":"share",
+		"TYPE":"",
+		"QUANTITY":1,
+		"AWARD":0
+	},	
+	{
+		"ID":"32",
+		"NAME":"Tell a Mate’s Dog",
+		"DESCRIPTION":"Share the game twice. Preferably with a talking dog like Wilfred. Failing that, a real pet.",
+		"ACTION":"share",
+		"TYPE":"",
+		"QUANTITY":2,
+		"AWARD":0
+	},	
+	{
+		"ID":"33",
+		"NAME":"Tell the World",
+		"DESCRIPTION":"Share the game thrice. That’s 3 friends. Or just 3 people at random on a bus.",
+		"ACTION":"share",
+		"TYPE":"",
+		"QUANTITY":3,
+		"AWARD":0
+	},	
+	{
+		"ID":"34",
+		"NAME":"Share Extraordinaire",
+		"DESCRIPTION":"Share the game 5 times. Take a megaphone to a public square and yell it out, until removed.",
+		"ACTION":"share",
+		"TYPE":"",
+		"QUANTITY":5,
+		"AWARD":0
+	},	
+	{
+		"ID":"35",
+		"NAME":"Share until Blocked",
+		"DESCRIPTION":"Share the game 10 times. Beware though, they’re mates not mum.",
+		"ACTION":"share",
+		"TYPE":"",
+		"QUANTITY":10,
+		"AWARD":10000
+	}
+  
+]
