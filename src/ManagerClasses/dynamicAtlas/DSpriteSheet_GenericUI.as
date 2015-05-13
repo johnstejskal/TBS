@@ -20,21 +20,14 @@ package ManagerClasses.dynamicAtlas {
 		public static function init(complete:Function = null):void {
 			
 			trace(DSpriteSheet_GenericUI + "init()");
+			return;
 			onComplete = complete;
-			var distanceHud:MC_distanceHUD = new MC_distanceHUD();
-			distanceHud.scaleX = distanceHud.scaleY = AppData.deviceScale;
-				
-			var hudBacking:MC_hudBacking = new MC_hudBacking();
-			hudBacking.scaleX = hudBacking.scaleY = AppData.deviceScale;
-					
-		//	var coinHud:MC_ = new MC_hudBacking();
-			//coinHud.scaleX = coinHud.scaleY = AppData.deviceScale;
+
 	
 								
 						
 			dtm = new DMTBasic(ref, false);
-			dtm.addItemToRaster(distanceHud, "distanceHud");
-			dtm.addItemToRaster(hudBacking, "hudBacking");
+
 			
 			dtm.addEventListener(flash.events.Event.COMPLETE, onProcessComplete);
 			dtm.process();	

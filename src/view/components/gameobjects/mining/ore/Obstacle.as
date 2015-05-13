@@ -1,5 +1,4 @@
-package view.components.gameobjects.obstacles 
-{
+package view.components.gameobjects.mining.ore {
 
 	import com.greensock.easing.Cubic;
 	import com.greensock.easing.Power1;

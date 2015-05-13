@@ -61,9 +61,9 @@ package
 		public function Main():void
 		{
 			if (stage)
-				startLaunchPad();
+				init();
 			else
-				addEventListener(Event.ADDED_TO_STAGE, startLaunchPad);
+				addEventListener(Event.ADDED_TO_STAGE, init);
 		}
 		
 		private function init(e:Event = null):void
@@ -116,9 +116,6 @@ package
 			
 			var config:Config = new Config();
 		
-			var debugPanel:DebugPanel = new DebugPanel();
-			this.addChild(debugPanel);
-			debugPanel.x = 600;
 		}
 		
 		private function startLaunchPad():void 

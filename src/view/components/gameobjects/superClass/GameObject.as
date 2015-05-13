@@ -32,9 +32,9 @@ package view.components.gameobjects.superClass
 		public var startSlot:Point;		
 		public var vectors:Array;
 
-		//-----------------------------o
-		//-- Constructor
-		//-----------------------------o
+		//============================================o
+		//-- Constructor  \/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+		//============================================o
 		public function GameObject() 
 		{
 			//trace(this + "Constructed");

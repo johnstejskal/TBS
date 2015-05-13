@@ -53,12 +53,12 @@
 	import treefortress.sound.SoundAS;
 	import treefortress.sound.SoundInstance;
 	import view.components.gameobjects.Background;
+	import view.components.screens.MineScreen;
 	import view.components.screens.SuperScreen;
 	import view.components.ui.MenuIcon;
 	import view.components.ui.SlideOutMenu;
 	import view.StarlingStage;
 
-	import view.components.screens.PlayScreen;
 	import view.components.screens.HomeScreen;
 	import staticData.Constants;
 	
@@ -96,15 +96,9 @@
 		public static const STATE_HOME:String = "home";
 		public static const STATE_GAME:String = "game";
 		public static const STATE_SHOP:String = "shop";
-		public static const STATE_CHECK_IN:String = "checkIn";
-		public static const STATE_ACHIEVEMENT:String = "acheivement";
-		public static const STATE_LEADERBOARDS:String = "leaderboards";
-		public static const STATE_SHARE:String = "share";
-		public static const STATE_ABOUT:String = "about";
+		public static const STATE_MINE:String = "mine";
 		public static const STATE_SETTINGS:String = "settings";
-		public static const STATE_LOGIN:String = "login";
-		static public const STATE_LOG_OUT:String = "logOut";
-		static public const STATE_REGISTER:String = "register";
+
 	
 		
 		//-----------------------------------------o
@@ -127,9 +121,9 @@
 		//-----------------------------------------o
 		
 		public static var _oHomeScreen:HomeScreen;
-		public static var _oPlayScreen:PlayScreen;
 
 		static private var _core:Core;
+		static private var _oMineScreen:MineScreen;
 
 		static public var allowDeviceDectivate:Boolean = true;
 		static public var allowDeviceActivate:Boolean = true;
@@ -431,22 +425,8 @@
 		static public function evtScreenChangeRequested(newState:String):void
 		{
 			trace(StateMachine + "evtStateChangeRequested()" + newState)
-			
-			if (newState == STATE_LOG_OUT)
-			{
-				Core.getInstance().controlBus.appUIController.showNotification("LOG OUT", "Are you sure want to log out?", "YES", onLogoutConfirm);
-				function onLogoutConfirm():void
-				{
-
-					//Services.logout.execute();
-					changeScreenState(STATE_HOME);
-				}
-			}
-			else
-			{
-			//PlayerService.saveGameData();	
 			changeScreenState(newState);
-			}
+			
 		}
 			
 
@@ -508,30 +488,10 @@
 			switch(newState)
 			{
 								
-				//------------------------------------------------------------------------------------o
-				
-				case STATE_HOME:
-					
-					_oHomeScreen = new HomeScreen();
-					_oHomeScreen.x = _oHomeScreen.y = 0;
-					
-					currentAppState = newState;
-					currentScreenObject = _oHomeScreen;
-					
-					currentScreenObject.manualRemoveDim = false;
-					
-					currentScreenObject.showTitleBar = false;
-					currentScreenObject.showBackButton = false;
-					
-					currentScreenObject.showMenuIcon = true;
-					
-					currentScreenObject.bgHexColour = HexColours.NAVY_BLUE;
-					currentScreenObject.displayName = HeaderLabels.HOME_SCREEN;
-					
-				break;	
+
 				
 				//------------------------------------------------------------------------------------o
-				case STATE_GAME:
+				case STATE_MINE:
 					
 					
 					SoundAS.stopAll();
@@ -539,24 +499,17 @@
 					//_core.controlBus.gameHUDController = new HUDController();
 					//_core.controlBus.mapsController = new MapsController();
 					
-					_oPlayScreen = new PlayScreen();
+					_oMineScreen = new MineScreen();
 					
-					if (!Core.getInstance().starling.isStarted)
-					Core.getInstance().starling.start();
+					//if (!Core.getInstance().starling.isStarted)
+					//Core.getInstance().starling.start();
 					
 					currentAppState = newState;
-					currentScreenObject = _oPlayScreen;
+					currentScreenObject = _oMineScreen;
 					
 				break;
+				
 
-				//------------------------------------------------------------------------------------o	
-				
-				default:
-				newState = STATE_HOME;
-				currentAppState = newState;
-				currentScreenObject.enableTimeOutPopup = true;
-				break;
-				
 			}
 			
 			stateLoaded();

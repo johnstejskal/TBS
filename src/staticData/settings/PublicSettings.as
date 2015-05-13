@@ -35,7 +35,7 @@ package staticData.settings
 	static public const MUTE_SOUND:Boolean = false;
 
 	static public const DEBUG_MODE:Boolean = false;
-	static public const INITIAL_APP_STATE:String = StateMachine.STATE_GAME;
+	static public const INITIAL_APP_STATE:String = StateMachine.STATE_MINE;
 	
 	
 	static public const WINDOW_X:String = "windowX";

@@ -1,4 +1,4 @@
-package view.components.screens
+package view.components.screens.mineSubScreens
 {
 	import com.thirdsense.animation.TexturePack;
 	import flash.display.MovieClip;
@@ -12,9 +12,6 @@ package view.components.screens
 	import starling.events.TouchPhase;
 	import staticData.AppData;
 	import staticData.settings.PublicSettings;
-	import view.components.screens.mineSubScreens.MineScreen1;
-	import view.components.screens.mineSubScreens.MineScreen2;
-	import view.components.screens.mineSubScreens.MineScreen3;
 
 	//==========================================o
 	/**
@@ -23,51 +20,28 @@ package view.components.screens
 	 * "Why walk when you can ride"
 	 */
 	//==========================================o
-	public class MineScreen extends SuperScreen implements iScreen
+	public class MineScreen2 extends SuperScreen implements iScreen
 	{
 		private var _oBg:Quad;
-		private var _spMineSeriesHolder:Sprite;
-		
-		private var _oMineScreen1:MineScreen1;
-		private var _oMineScreen2:MineScreen2;
-		private var _oMineScreen3:MineScreen3;
+
 
 
 		//==========================================o
 		//------ Constructor 
 		//==========================================o
-		public function MineScreen():void 
+		public function MineScreen2():void 
 		{
 			
 		}
 
-		//==========================================o
-		//------ Assets loaded callback 
-		//==========================================o
-		public override function loaded():void 
-		{
-
-			DSpriteSheet_mining.init(init);
-		}
 		
 		//==========================================o
 		//------ init
 		//==========================================o
 		override public function init():void 
 		{
-
-			_spMineSeriesHolder = new Sprite();
-			
-			_oMineScreen1 = new MineScreen1();
-			_oMineScreen2 = new MineScreen2();
-			_oMineScreen3 = new MineScreen3();
-			
-			_spMineSeriesHolder.addChild(_oMineScreen1);
-			_spMineSeriesHolder.addChild(_oMineScreen2);
-			_spMineSeriesHolder.addChild(_oMineScreen3);
-			
-			this.addChild(_spMineSeriesHolder);
-			
+			_oBg = new Quad(AppData.deviceResX, AppData.deviceResY, 0xff0000);
+			this.addChild(_oBg);
 			
 		}
 
