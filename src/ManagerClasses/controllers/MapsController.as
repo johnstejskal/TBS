@@ -14,8 +14,7 @@ package ManagerClasses.controllers
 	import starling.display.Sprite;
 	import staticData.AppData;
 	import staticData.settings.PublicSettings;
-	import view.components.gameobjects.enemy.*;
-	import view.components.gameobjects.MysteryBox;
+
 	import view.components.gameobjects.superClass.GameObject;
 	/**
 	 * ...

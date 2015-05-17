@@ -10,6 +10,7 @@ package staticData.dataObjects
 	 */
 	public class PlayerData 
 	{
+
 	static public var firstName:String;
 	static public var arrPurchasedItems:Array = [];
 	static public var arrAchievements:Array = [];

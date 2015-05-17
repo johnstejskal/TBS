@@ -53,6 +53,10 @@
 		public var sigTogglePause:Signal;
 		public var sigRestartGame:Signal;
 		public var sigTutorialFinished:Signal;
+		public var sigOnOreClicked:Signal;
+		public var sigOnOreMineSuccess:Signal;
+		public var sigOnOreMineFailed:Signal;
+		public var sigOnPickAxeBroken:Signal;
 
 		
 

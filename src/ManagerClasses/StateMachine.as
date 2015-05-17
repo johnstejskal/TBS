@@ -493,7 +493,7 @@
 				//------------------------------------------------------------------------------------o
 				case STATE_MINE:
 					
-					
+
 					SoundAS.stopAll();
 					
 					//_core.controlBus.gameHUDController = new HUDController();

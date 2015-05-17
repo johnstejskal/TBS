@@ -30,7 +30,6 @@ package
 	import starling.events.ResizeEvent;
 	import starling.utils.HAlign;
 	import starling.utils.VAlign;
-	import view.components.screens.PlayScreen;
 	
 	import flash.events.ErrorEvent;
 	import flash.events.Event;

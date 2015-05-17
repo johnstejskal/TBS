@@ -1,8 +1,12 @@
 package view.components.screens.mineSubScreens
 {
+	import com.greensock.TweenMax;
 	import com.thirdsense.animation.TexturePack;
 	import flash.display.MovieClip;
 	import ManagerClasses.dynamicAtlas.DSpriteSheet_mining;
+	import org.osflash.signals.Signal;
+	import singleton.EventBus;
+	import starling.display.DisplayObject;
 	import starling.display.MovieClip;
 	import interfaces.iScreen;
 	import starling.display.Quad;
@@ -10,10 +14,13 @@ package view.components.screens.mineSubScreens
 	import starling.events.Touch;
 	import starling.events.TouchEvent;
 	import starling.events.TouchPhase;
+	import starling.utils.deg2rad;
 	import staticData.AppData;
+	import staticData.dataObjects.PickAxeVO;
 	import staticData.settings.PublicSettings;
 	import view.components.gameobjects.mining.ore.MineOre;
 	import view.components.gameobjects.mining.ore.Ore;
+	import view.components.gameobjects.mining.PickAxe;
 	import view.components.screens.SuperScreen;
 
 	//==========================================o
@@ -23,17 +30,16 @@ package view.components.screens.mineSubScreens
 	 * "Why walk when you can ride"
 	 */
 	//==========================================o
-	public class MineScreen2 extends MineSubScreen
+	public class MineSubScreen extends SuperScreen implements iScreen
 	{
-		private var _oBg:Quad;
-
-
+		private var _oPickAxe:PickAxe;
 
 		//==========================================o
 		//------ Constructor 
 		//==========================================o
-		public function MineScreen2():void 
+		public function MineScreen1():void 
 		{
+			
 			init();
 		}
 
@@ -43,56 +49,29 @@ package view.components.screens.mineSubScreens
 		//==========================================o
 		override public function init():void 
 		{
-			_oBg = new Quad(AppData.deviceResX, AppData.deviceResY, 0xff0000);
-			this.addChild(_oBg);
+
 			
-			
-			var ore:MineOre = new MineOre(Ore.TYPE_COPPER, 1, this);
-			ore.x = ore.y = 100;
-			this.addChild(ore);
-						
-			var ore2:MineOre = new MineOre(Ore.TYPE_COPPER, 2, this);
-			ore2.x = ore2.y = 400;
-			this.addChild(ore2);
-									
-			var ore3:MineOre = new MineOre(Ore.TYPE_COPPER, 3, this);
-			ore3.x = 600; ore3.y = 100;
-			this.addChild(ore3);
-			
-			
-			
+		}
+		
+		
+		
+		public function mapEvents():void
+		{
+
+		}
+		
+
+
+		public override function activate():void
+		{
+			trace(this + "activate()");
 			
 		}
 
-		//==========================================o
-		//------ Event Handlers 
-		//==========================================o		
-		//==========================================o
-		//------ Touch Handlers 
-		//==========================================o
-		private function onTouch(e:TouchEvent):void 
+		public override function deactivate():void
 		{
 			
-			var touch:Touch = e.getTouch(stage);
-            if(touch)
-            {
-                if(touch.phase == TouchPhase.BEGAN)
-                {				
-					
-                }
- 
-                else if(touch.phase == TouchPhase.ENDED)
-                {
-					
-                }
- 
-                else if(touch.phase == TouchPhase.MOVED)
-                {
-                            
-                }
-            }
 		}
-
 
 		//==========================================o
 		//------ Public functions 
@@ -109,8 +88,13 @@ package view.components.screens.mineSubScreens
 			this.removeFromParent();
 		}
 		
+		public function setup():void 
+		{
+			mapEvents();
 
+		}
 		
+
 		//==========================================o
 		//------ Getters and Setters 
 		//==========================================o			

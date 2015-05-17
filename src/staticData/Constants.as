@@ -17,8 +17,8 @@ package staticData
 
 
 	 
-	public static const BASE_RES_X:int = 768;
-	public static const BASE_RES_Y:int = 1024;
+	public static const BASE_RES_X:int = 1024;
+	public static const BASE_RES_Y:int = 768;
 
 		 
 	public static const LAYOUT_RES_X:int = 640;

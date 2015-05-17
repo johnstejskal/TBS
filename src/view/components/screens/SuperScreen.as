@@ -123,7 +123,7 @@ package view.components.screens
 		//----------------------------------------o	
 		public function trash():void
 		{
-			TexturePack.deleteTexturePack(DynamicAtlasValues.TITLE_BAR)
+		
 
 		}
 		
@@ -146,99 +146,7 @@ package view.components.screens
 		}
 		
 		
-		//========================================o
-		//--- set a header text
-		//========================================o
-		public function setHeaderText(title:String, subText:String, adjustForSubHeader:Boolean = false):void 
-		{
-			//text header
-			spTitleText = new Sprite();
-			var textFieldTitle:TextField = new TextField(AppData.deviceResX, 100, title, AppFonts.FONT_ARIAL, Math.floor(AppData.offsetScaleX * 65), HexColours.WHITE);
-			textFieldTitle.hAlign = HAlign.CENTER; 
-			textFieldTitle.vAlign = VAlign.TOP;
-			textFieldTitle.border = false;
-			textFieldTitle.x = 0//Math.floor(Data.deviceScaleX *20);
-			textFieldTitle.autoSize = TextFieldAutoSize.VERTICAL;
-			textFieldTitle.y = Math.floor(0);
-			
-			spTitleText.addChild(textFieldTitle);
-			
-			//sub text
-			var textFieldSub:TextField = new TextField(AppData.deviceResX, 100, subText, AppFonts.FONT_ARIAL, Math.floor(AppData.offsetScaleX * 34), HexColours.WHITE);
-			textFieldSub.hAlign = HAlign.CENTER; 
-			textFieldSub.vAlign = VAlign.TOP;
-			textFieldSub.border = false;
-			textFieldSub.x = 0// Math.floor(Data.deviceScaleX *20);
-			textFieldSub.y = Math.floor(textFieldTitle.y + (textFieldTitle.height + 10));
-			textFieldSub.autoSize = TextFieldAutoSize.VERTICAL;
-			spTitleText.addChild(textFieldSub);
-			
-			
-/*			var titleBarHeight:int; 
-			if(core.controlBus.appUIController.oTitleBar != null)
-			titleBarHeight = core.controlBus.appUIController.oTitleBar.height;
-			else
-			titleBarHeight = 20;*/
-		
-/*			if (adjustForSubHeader)
-			{
-				if (core.controlBus.appUIController.oSubTitleBar == null && core.controlBus.appUIController.oSubTitleNav == null)
-				{
-					throw new Error(this + "Error: oSubTitleBar or oSubTitleNav does not exist")
-				}
-			
-				var subBarHeight:int;
-				if (core.controlBus.appUIController.oSubTitleBar != null)
-				subBarHeight = core.controlBus.appUIController.oSubTitleBar.height;
-				else if (core.controlBus.appUIController.oSubTitleNav != null)
-				subBarHeight = core.controlBus.appUIController.oSubTitleNav.height;
-				
-				spTitleText.y = titleBarHeight + subBarHeight + (titleBarHeight/2);	
-				
-			}
-			else
-			{
-				spTitleText.y = titleBarHeight + (titleBarHeight / 2);
-			}
-			this.addChild(spTitleText);*/
-		}
-		
-		//========================================o
-		//--- remove  header text
-		//========================================o
-		public function removeHeaderText():void
-		{
-			if(spTitleText != null)
-			spTitleText.removeFromParent();
-		}
-		
-		
-		//========================================o
-		//--- set a screen BG colour
-		//========================================o
-		public function setBG(hexColour:uint, alpha:Number = 1):void 
-		{
-			if (_quBGFill)
-			return;
-			
-			_quBGFill = new Quad(AppData.deviceResX, AppData.deviceResY, hexColour);
-			_quBGFill.alpha = alpha;
-			this.addChild(_quBGFill);
-		}
-		
-		
-		//========================================o
-		//--- set bg size
-		// used for updating post init for clipped screens
-		//========================================o		
-		public function setBGSize(w:int, h:Number):void 
-		{
-			if (!_quBGFill)
-			return;
-			
-			_quBGFill.width = w;
-			_quBGFill.height = h;
-		}
+
 		
 		
 		public  function changeSubScreen(newState:String, vo:ValueObject = null, transitionType:String = "none"):void 
@@ -246,31 +154,8 @@ package view.components.screens
 			
 		}
 		
-		public function hideTitleBar():void 
-		{
-			
-		}
-		
-		
-		public function get displayName():String 
-		{
-			return _displayName;
-		}
-		
-		public function set displayName(value:String):void 
-		{
-			_displayName = value;
-		}
-		
-		public function get bgHexColour():uint 
-		{
-			return _bgHexColour;
-		}
-		
-		public function set bgHexColour(value:uint):void 
-		{
-			_bgHexColour = value;
-		}
+
+
 		
 		
 	}
