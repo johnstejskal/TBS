@@ -36,6 +36,7 @@ package ManagerClasses.controllers
 	import view.components.screens.LoadingScreen;
 	import view.components.ui.FormField;
 	import view.components.ui.MenuIcon;
+	import view.components.ui.nativeDisplay.ProgressBar;
 	import view.components.ui.NotificationPanel;
 	import view.components.ui.screenPanels.SettingsPanel;
 
@@ -71,6 +72,7 @@ package ManagerClasses.controllers
 		private var _prevInfoPanelId:int;
 		private var _isLoading:Boolean = false;
 		private var _currPanelIndex:Number = 0;
+		private var _oProgressBar:ProgressBar;
 		
 		//==============================================o
 		//------ Constructor
@@ -451,6 +453,17 @@ package ManagerClasses.controllers
 			AppData.arrStageTextInstanes = [];
 			trace(this+"removeStageText(), Data.arrStageTextInstanes.length is:"+AppData.arrStageTextInstanes.length)
 		
+		}
+		
+		public function showProgressBar(discipline:String):void 
+		{
+			
+			if (_oProgressBar != null)
+			{
+				_oProgressBar = null;
+			}
+			_oProgressBar = new ProgressBar(discipline);
+			core.nativeStage.addChild(_oProgressBar);
 		}
 		
 

@@ -1,0 +1,30 @@
+[
+	{
+		"ID":1,		
+		"REF":"tin",
+		"NAME":"Tin",
+		"DESCRIPTION":"Tin Ore",
+		"STRENGTH_GRADE":1,
+		"REQUIRED_LEVEL":1
+		
+	},
+	{
+		"ID":2,
+		"REF":"copper",		
+		"NAME":"Copper",
+		"DESCRIPTION":"copper ore",
+		"STRENGTH_GRADE":1,
+		"REQUIRED_LEVEL":1
+		
+	},	
+	{
+		"ID":3,
+		"REF":"coal",		
+		"NAME":"Coal",
+		"DESCRIPTION":"coal ore",
+		"STRENGTH_GRADE":2,
+		"REQUIRED_LEVEL":1
+		
+	}
+
+]

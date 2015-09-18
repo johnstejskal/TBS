@@ -27,6 +27,7 @@ package view.components.ui
 	import starling.utils.HAlign;
 	import starling.utils.VAlign;
 	import staticData.AppFonts;
+	import staticData.dataObjects.ResourceData;
 	import staticData.DeviceType;
 	import staticData.GameData;
 	import staticData.HexColours;
@@ -34,6 +35,7 @@ package view.components.ui
 	import staticData.settings.PublicSettings;
 	import staticData.AppData;
 	import staticData.SpriteSheets;
+	import view.components.gameobjects.mining.ore.MineOre;
 	
 	/**
 	 * ...
@@ -47,6 +49,7 @@ package view.components.ui
 		private var _img:DisplayObject;
 		private var _backing:Quad;
 		private var _dtm:DMTBasic;
+		private var _arrItems:Array;
 
 		//=======================================o
 		//-- Constructor <><><><><><><><><><><><>
@@ -70,19 +73,18 @@ package view.components.ui
 			
 			removeEventListener(Event.ADDED_TO_STAGE, init);
 			
+			_arrItems = new Array();
 			_backing = new Quad(AppData.deviceResX, 100, 0xCCCCCC);
 			this.addChild(_backing);
 			
 			_dtm = new DMTBasic("inventoryBar", false);
 			
-			var item1:MC_toolbarItem = new MC_toolbarItem();
-			item1.scaleX = item1.scaleY = AppData.deviceScale;		
-			_dtm.addItemToRaster(item1, "item1");
 			
-			var item2:MC_toolbarItem = new MC_toolbarItem();
-			item2.scaleX = item2.scaleY = AppData.deviceScale;		
-			_dtm.addItemToRaster(item2, "item2");
-						
+			//add required assets to DTM to pass to InventortBarItems
+			var itemBacking:MC_toolbarItem = new MC_toolbarItem();
+			itemBacking.scaleX = itemBacking.scaleY = AppData.deviceScale;		
+			_dtm.addItemToRaster(itemBacking, "itemBacking");
+			
 			var ore:MC_oreIcon = new MC_oreIcon();
 			ore.scaleX = ore.scaleY = AppData.deviceScale;
 			_dtm.addItemToRaster(ore, "ore");
@@ -105,20 +107,13 @@ package view.components.ui
 		private function loaded():void 
 		{
 			
-			for (var i:int = 1; i < 3; i++) 
+			//TODO  create array of Ore VO's from jSON and pass into loop
+			for (var i:int = 0; i < ResourceData.arrOreMasterList.length; i++) 
 			{
-/*				var item:InventoryBarItem = new InventoryBarItem();
+				var item:InventoryBarItem = new InventoryBarItem(ResourceData.arrOreMasterList[i],_dtm);
 				item.x = i * 100;
-				this.addChild(item);*/
-				var img:DisplayObject = _dtm.getAssetByUniqueAlias("item"+i);
-				img.x = i * 100;
-				this.addChild(img);		
-				
-				var ore:MovieClip = _dtm.getAssetByUniqueAlias("ore") as MovieClip;
-				ore.currentFrame = i;
-				ore.x = i * 100;
-				this.addChild(ore);	
-				
+				this.addChild(item);
+				_arrItems.push(item);
 			}	
 		}
 
@@ -137,6 +132,22 @@ package view.components.ui
 		public function update():void 
 		{
 			_tf.text = String(GameData.currDistance);
+		}
+		
+		public function addOre(ore:MineOre):void 
+		{
+			
+		}
+		
+		public function getSlotForResource(ore:MineOre):void 
+		{
+			for (var i:int = 0; i < _arrItems.length; i++) 
+			{
+				if (InventoryBarItem(_arrItems[i]).vo.ref == ore.type)
+				{
+					trace("SLOT FOUND");
+				}
+			}
 		}
 		
 		

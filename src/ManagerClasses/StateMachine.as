@@ -149,11 +149,14 @@
 		{
 			trace(StateMachine + " setup()");
 			
-/*			_core = Core.getInstance();
-			_core.controlBus = new ControlBus;
-			
+			_core = Core.getInstance();
+			_core.controlBus = new ControlBus();
+			_core.controlBus.playerController = new PlayerController();
 			_core.controlBus.appUIController = new AppUIController(oStarlingStage);
 			
+			_core.controlBus.resourceController = new ResourceController();
+			_core.controlBus.resourceController.init();					
+				/*
 			_core.controlBus.mapsController = new MapsController();
 			
 			_core.controlBus.achievementController = new AchievementController();

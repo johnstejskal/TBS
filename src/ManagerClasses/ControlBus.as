@@ -2,6 +2,8 @@ package ManagerClasses
 {
 	import ManagerClasses.controllers.AchievementController;
 	import ManagerClasses.controllers.AppUIController;
+	import ManagerClasses.controllers.PlayerController;
+	import ManagerClasses.controllers.ResourceController;
 
 	import ManagerClasses.controllers.InventoryController;
 	import ManagerClasses.controllers.MapsController;
@@ -25,12 +27,14 @@ package ManagerClasses
 		public var appUIController:AppUIController;
 		public var mapsController:MapsController;
 		public var achievementController:AchievementController;
+		public var playerController:PlayerController;
 /*		public var powerupController:PowerUpController;
 		public var gameHUDController:HUDController;*/
 		public var inventoryController:InventoryController;
 		public var shopItemController:ShopItemController;
 
 		public var soundController:SoundController;
+		public var resourceController:ResourceController;
 
 		
 		public function initController(controller:SuperController, classRef:Class):void

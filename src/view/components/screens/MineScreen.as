@@ -15,6 +15,7 @@ package view.components.screens
 	import starling.events.TouchEvent;
 	import starling.events.TouchPhase;
 	import staticData.AppData;
+	import staticData.dataObjects.Disciplines;
 	import staticData.dataObjects.PickAxeVO;
 	import staticData.settings.PublicSettings;
 	import view.components.gameobjects.mining.ore.MineOre;
@@ -24,6 +25,7 @@ package view.components.screens
 	import view.components.screens.mineSubScreens.MineScreen3;
 	import view.components.screens.mineSubScreens.MineSubScreen;
 	import view.components.ui.InventoryBar;
+	import view.components.ui.nativeDisplay.ProgressBar;
 
 	//==========================================o
 	/**
@@ -49,6 +51,7 @@ package view.components.screens
 		private var _oPickAxe:PickAxe;
 		private var _isMining:Boolean = false;
 		private var _oInventoryBar:InventoryBar;
+		private var _oProgressBar:ProgressBar;
 
 		//==========================================o
 		//------ Constructor 
@@ -74,6 +77,11 @@ package view.components.screens
 		{
 			trace(this + "init()");
 
+			//core.controlBus.appUIController.showProgressBar(Disciplines.MINING);
+			
+			_oProgressBar = new ProgressBar(Disciplines.MINING);
+			core.nativeStage.addChild(_oProgressBar);
+			
 			_spMineSeriesHolder = new Sprite();
 			
 			_oMineScreen1 = new MineScreen1();
@@ -127,7 +135,7 @@ package view.components.screens
 			EventBus.getInstance().sigOnPickAxeBroken = new Signal()
 			EventBus.getInstance().sigOnPickAxeBroken.add(OnPickAxeBroken)
 			
-			
+			_oProgressBar.update();
 		}
 		
 		private function OnPickAxeBroken():void 
@@ -142,8 +150,19 @@ package view.components.screens
 		
 		private function OnOreMineSuccess(ore:MineOre):void 
 		{
+			trace(this + "SUCCESSFULLY MINED " + ore.type);
 			hidePickAxe();	
 			_isMining = false;
+			core.controlBus.playerController.updateExperience(Disciplines.MINING, ore.strengthGrade);
+			_oProgressBar.update();
+			_oInventoryBar.addOre(ore);
+			sendOreToToolbar(ore);
+			
+		}
+		
+		private function sendOreToToolbar(ore:MineOre):void 
+		{
+			_oInventoryBar.getSlotForResource(ore);
 		}
 		
 		private function showPickAxe():void 
@@ -190,6 +209,7 @@ package view.components.screens
 				_oCurrMineScreen.addChild(_oPickAxe);
 			}
 		}
+		
 		public function removePickAxe():void
 		{
 			if (_oPickAxe != null)
